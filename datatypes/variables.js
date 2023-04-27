@@ -18,5 +18,12 @@ firstName = "Prakhyat  singhal";
 
 document.write(firstName);
 
-//both the name will print
- 
+//both the name will print one time
+
+
+//let keywords 
+
+let secondName = "Aishwarya soni";
+document.write(secondName);
+
+// block scope vs function scope make difference in var vs let 
