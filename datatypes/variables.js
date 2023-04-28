@@ -27,3 +27,23 @@ let secondName = "Aishwarya soni";
 document.write(secondName);
 
 // block scope vs function scope make difference in var vs let 
+
+
+//declare constants
+
+const pi = 3.14;
+
+//
+ //string indexing 
+  let firstName = "Prakhar singh";
+
+  document.write(firstName[0]); // will print P
+  document.write(firstName[0]); // will print r
+  document.write(firstName[0]); // will print a
+
+  // last index = length -1;
+
+
+  // to find the length
+
+  document.write(firstName.length);
