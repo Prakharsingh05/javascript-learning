@@ -101,3 +101,66 @@
 
   //one more method to change number to string vice versa 
 
+  let age1 = 18;
+
+  age = String(age1);
+  console.log(typeof age1);
+
+  //string concatenation
+
+  let string1 = "prakhar";
+  let string2 = "Aishwarya";
+
+  //adding the strings
+
+  let bothtogether = string1 + " " + string2;
+
+  console.log(bothtogether);
+
+
+ //adding number as strings
+  let string11 = "40";
+  let string22 = "50";
+
+  //adding the strings 
+  // just add plus before the strings as mentioned before
+
+  let bothtogetherr = +string11 + +string22;
+
+  console.log(bothtogetherr);
+
+
+  //template strings
+  
+  let N_age = 20;
+  let My_name = "Prakhar";
+
+  // template sholu be as followed my name is prakhar and my age is 20
+
+   let discription = "my name is " + My_name + " and my age is " + N_age;
+   
+   console.log(discription);
+
+   //one more method to do that
+
+   let aboutMe = `my name is ${My_name} and my age is ${N_age}`;
+   console.log(aboutMe);
+
+   // undefined == when you declare a variable but you do not asign a value to it then it is called undefined
+   // it doesnt work with const variable
+
+   let newNamel; 
+   console.log(typeof newName); //undefined 
+
+   //null == nothing;
+
+   let myVariable = null;
+    console.log(myVariable);
+
+    console.log(typeof myVariable); // object // important
+    
+
+
+
+
+
