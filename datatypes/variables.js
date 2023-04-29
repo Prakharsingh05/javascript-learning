@@ -157,7 +157,35 @@
    let myVariable = null;
     console.log(myVariable);
 
-    console.log(typeof myVariable); // object // important
+    console.log(typeof myVariable); // object // important bcoz this is the error/bug of javascript
+
+    //BigInt
+    console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991 <<<<< BIGINT
+    let myNumber = BigInt(12345678909876543212345678909876543234567890);
+    let Myumber = 1235555678909876543234567212345678909876543234567890n;
+    console.log(typeof Myumber);
+
+    //booleans & comparison operator
+
+    //booleans true or false
+     let num1 = 5;
+     let num2 = 8;
+
+     console.log(num1>num2); // false
+     
+     // comaprision
+
+     console.log(num1 == num2); //check only the value
+     console.log(num1 === num2); //check value  with th datatype
+    //not equal to
+     console.log(num1!= num2) // true
+     
+
+
+
+    
+    
+
     
 
 
