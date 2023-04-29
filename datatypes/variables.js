@@ -63,6 +63,41 @@
 
   // more methods are there check on mdn documentation
 
+  // types of operator
+
+  //data types(primitive data types)
+  //String
+  //number
+  //booleans
+  //uindefined
+  //undefined
+  //null
+  //BigInt
+  //symbol
   
 
+
+  //to ceck the datatype
+  let age = 22;
+  let nameee = "aishwarya";
+  console.log(typeof age);  //number
+  console.log(typeof nameee);  //string
+
+
+
+
+
+  //convert number to string
+ // adding empty string to a number changes its datatype to string
+  console.log(typeof (age + " "));
+
+
+
+
+  //convert string to number
+  //adding plus before string makes it a number
+  let str = +"34";
+  console.log(typeof str);
+
+  //one more method to change number to string vice versa 
 
