@@ -10,6 +10,7 @@ const person = {
     name: "parkar",
     age: "20",
     hobbies : ["guitar" , "singing"] // objects can contain array
+    
 
 }
 
@@ -22,3 +23,8 @@ console.log(person.hobbies);
 //hot to add key value pair to objects
 
 person.gender = "male";
+
+//how to acces data from objects
+
+console.log(person["name"]); //tsa
+
