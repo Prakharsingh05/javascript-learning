@@ -18,5 +18,17 @@ let age1 = 8;
 let drink1 = age >=5 ? "coffee" : "milk"; // if true than coffee will be considered else milk
 
 
+let age11 = 25;
+let drink11 ;
+
+if(age11<19){
+    console.log("you cant perform the acitivity ");
+
+}else{
+
+    console.log("yes you can surely perform the activity");
+}
+
+
 
 
