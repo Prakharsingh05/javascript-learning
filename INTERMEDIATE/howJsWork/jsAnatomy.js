@@ -14,6 +14,7 @@
 // 3 code generation ?/ excutable code formation gentratiion ehivh lawer
 
 console.log(this);
+
 console.log(window);
 console.log(furstName);
 var firstName = "Prakhar";
