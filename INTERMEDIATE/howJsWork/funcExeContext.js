@@ -4,7 +4,7 @@
 // 1 - first step will  br global execution context
 //
 
-let foo = "foo";
+let foo = "foo";  // in memory creation phase the value of variable foo will be uninitalized becuase it is created using let
 
 console.log(foo);
 
