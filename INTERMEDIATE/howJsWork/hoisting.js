@@ -5,3 +5,12 @@
 
 console.log(firstName);
 var firstName = "prakhar";
+
+// now try this with function
+
+
+console.log(myFunction);
+var myFunction = function(){
+
+    console.log("this is my Function");
+}
