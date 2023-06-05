@@ -17,5 +17,6 @@ function outerFunction(){
 var ans = outerFunction();
     
 console.log(ans);
+ans(); // hello world
 
 
