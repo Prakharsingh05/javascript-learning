@@ -3,10 +3,14 @@
 
 
 
-function getFullName(firstName , LastName){                                                                 //
-    console.log(arguments); // array like objects not array it have a properties like indexing and length   //                  
-    let myVar = "var inside func";                                                                          //      ----function execution scop     
-    console.log(myVar);                                                                                     //        
-    const fullName = firstName + " " + LastName;                                                            //    
-    return fullName;                                                                                        //
-} 
+const lastName = "Singh"; // lastName in globle execution phase
+
+const printName = function(){
+
+
+    const firstName = "harshit";
+    console.log(firstName);
+    console.log(lastName); // js doesnt found anything related to lastName in function execution scope then it will search lastName in globle execution phase memory
+}
+
+printName();
