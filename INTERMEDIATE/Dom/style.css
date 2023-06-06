@@ -16,6 +16,7 @@ body{
 }
 
 .header{
+    position: relative;
     min-height: 100vh;
     background-image: url(/INTERMEDIATE/Dom/photo1.jpg);
     background-position: center;
@@ -45,4 +46,27 @@ body{
     list-style-type: none;
     justify-content: space-between;
 
+}
+
+.headline{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+
+}
+
+.btn{
+
+    display : inline-block;
+    outline : none;
+    border : none;
+    cursor : pointer;
+
+}
+
+btn-headline{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
 }
