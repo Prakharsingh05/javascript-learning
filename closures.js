@@ -20,3 +20,17 @@ console.log(ans);
 ans(); // hello world
 
 
+// lets go into closures
+// and analyze this code
+ 
+function printFullName(firstName , lastName){
+
+    function printName(){
+        console.log(firstName , lastName);
+    }
+
+    return printName ;
+}
+
+
+
