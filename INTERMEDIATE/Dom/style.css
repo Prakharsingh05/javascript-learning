@@ -111,7 +111,27 @@ body{
     font-weight: bold;
 }
 
+.section-signup{
+    margin-top: 5rem;
+}
 
+.signup-Form{
+
+    max-width: 800px;
+    width: 95%;
+   
+    margin: auto;
+}
+
+.signup-Form label{
+    display: block;
+
+}
+
+.signup-Form input{
+    display: block;
+    width: 100%;
+}
 
 
 
