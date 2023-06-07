@@ -74,5 +74,19 @@ body{
 }
 
 .section-todo{
-    
+    margin-top: 5rem;
+    text-align: center;
+
+}
+
+.todo-section{
+    broder: 2px solid red;
+    min-height: 5vh;
+    display: flex;
+}
+
+
+.todo-section{
+
+    min-height: 100%;
 }
