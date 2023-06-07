@@ -79,14 +79,61 @@ body{
 
 }
 
-.todo-section{
-    broder: 2px solid red;
+.form-todo{
+    
     min-height: 5vh;
     display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
 }
 
 
-.todo-section{
+.form-todo{
 
     min-height: 100%;
+
 }
+
+.form-todo input[type = "text"]{
+
+    width: 78%;
+
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.form-todo input[type = "submit"]{
+
+    width: 20%;
+    background: rgb(44,55,63);
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
