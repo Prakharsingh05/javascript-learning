@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokesite</title>
+    
+</head>
+<body>
+    <div  id="joke"></div>
+    <textarea id="txt">hello</textarea>
+    <button onclick="generate()">generate joke</button>
+    
+
+
+    <script>
+        
+        function generate(){
+            var data = fetch("https://official-joke-api.appspot.com/random_joke")
+        data.then((result)=>{
+            result.json().then((response)=>{
+                console.log(response);
+                document.getElementById("txt").innerHTML = `setup : ${response.setup}<br> Punchline: ${response.punchline}`;
+            })
+        })
+        }
+    </script>
+</body>
+</html>
