@@ -59,12 +59,12 @@ console.log(navItems1[3]);
 // array like object -> indexing , length property can be performed 
 
 //simple for loop
-btn_2.onclick=()=>{
-for(let i = 0; i<navItems1.length; i++){
+btn_2.onclick = ()=>{
+for(let i = 0; i<navItems1.length-1; i++){
 
     const navItem = (navItems1[i]);
-    navItems1.style.backgroundColor = "#fff";
-    navItems1.style.backgroundColor = "Green";
+    navItem.style.backgroundColor = "#fff";
+    navItem.style.color = "black";
     
 }
 }
