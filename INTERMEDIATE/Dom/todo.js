@@ -39,6 +39,9 @@ btn.onclick  = ()=>mainHeading.style.color = "green";
 
 //get and set attributes
 
+const link = document.querySelector("a");
+console.log(link)
+
 
 
 
