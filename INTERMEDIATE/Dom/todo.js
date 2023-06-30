@@ -51,18 +51,19 @@ const inputElement = document.querySelector(".form-todo input");
 //get multiple elements using getElements by class name
 // get multiple elements items using querySelectorALL
 
-const navItems1 = document.getElementsByTagName("a"); // HTML collections 
-console.log(navItems1[1]);// this is array like object not array{indexing}
-console.log(navItems1[2]);
-console.log(navItems1[3]);
+const navItems = document.getElementsByTagName("a"); // HTML collections 
+console.log(navItems[1]);// this is array like object not array{indexing}
+console.log(navItems[2]);
+console.log(navItems[3]);
 
 // array like object -> indexing , length property can be performed 
 
-//simple for loop
+//simple for 
+const btn_2 = document.querySelector(".chngclr");
 btn_2.onclick = ()=>{
-for(let i = 0; i<navItems1.length-1; i++){
+for(let i = 0; i<navItems.length; i++){
 
-    const navItem = (navItems1[i]);
+    const navItem = navItems[i];
     navItem.style.backgroundColor = "#fff";
     navItem.style.color = "black";
     
