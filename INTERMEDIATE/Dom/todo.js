@@ -13,11 +13,9 @@
 // const mainHeading = document.querySelector("#main-heading");
 
 // console.log(mainHeading);
-
 const mainHeading = document.getElementById("main-heading");
 
-onscroll= ()=>{mainHeading.textContent ="this is changed now";}
-
+console.log(mainHeading.textContent);
 
 
 
