@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quotes</title>
+    <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    
+   
+    
+    #txt {
+      color: rgb(255, 255, 255);
+      width: 200px;
+      height: 50px;
+      border: 1px solid gray;
+      padding: 100px;
+      text-align: center;
+      background: #494b4b;
+      
+    }
+    
+    button {
+      background-color: rgb(34, 118, 167);
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      margin: 0 auto;
+    }
+    </style>
+</head>
+<body>
+    <div  id="joke"></div>
+    <textarea id="txt"> click Get Qoute</textarea>
+    <br>
+    <button onclick="generate()">Get Qoute</button>
+    
+
+
+    <script>
+        
+    
+
+       async function generate(){
+        var data = await fetch("https://api.quotable.io/quotes/random");
+
+        var jsondata = await data.json();
+        console.log(jsondata);
+        
+        document.getElementById("txt").innerHTML = `Qoute : ${jsondata[0].content} Author: ${jsondata[0].author}`;
+       }
+    </script>
+</body>
+</html>

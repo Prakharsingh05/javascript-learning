@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jokesite</title>
+    <link
     
 </head>
 <body>
@@ -16,15 +17,24 @@
 
     <script>
         
-        function generate(){
-            var data = fetch("https://official-joke-api.appspot.com/random_joke")
-        data.then((result)=>{
-            result.json().then((response)=>{
-                console.log(response);
-                document.getElementById("txt").innerHTML = `setup : ${response.setup} + <br> +Punchline: ${response.punchline}`;
-            })
-        })
-        }
+     //   function generate(){
+     //       var data = fetch("https://official-joke-api.appspot.com/random_joke")
+     //   data.then((result)=>{
+     //       result.json().then((response)=>{
+      //          console.log(response);
+       //         document.getElementById("txt").innerHTML = `setup : ${response.setup} Punchline: ${response.punchline}`;
+       //     })
+      //  })
+       // }
+
+       async function generate(){
+        var data = await fetch("https://official-joke-api.appspot.com/random_joke");
+
+        var jsondata = await data.json();
+        console.log(jsondata);
+
+        document.getElementById("txt").innerHTML = `setup : ${jsondata.setup} Punchline: ${jsondata.punchline}`;
+       }
     </script>
 </body>
 </html>

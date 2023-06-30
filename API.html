@@ -1,0 +1,31 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=""X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Testing</title>
+
+</head>
+<body>
+    <pre id="elem"></pre>
+    <button onclick=generate()>Generate Joke</button>
+    <button onclick=generateQuote()>Generate Quote</button>
+    <script>
+        async function generateQuote() {
+            var news = await fetch("https://api.quotable.io/quotes/random")
+            var rt = await news.json()
+            document.getElementById("elem").innerHTML=`<b>Quote:</b> <q>${rt[0].content}</q> <br /><b>~ </b><i> ${rt[0].author}</i>`
+        }
+        
+        function generate() {
+            var data = fetch("https://official-joke-api.appspot.com/random_joke")
+            data.then((result)=>{
+                result.json().then((response)=>{
+                    document.getElementById("elem").innerHTML=`<b>Question:</b> <q>${response.setup}</q> <br><b>Punchline:</b><i> ${response.punchline}</i>`;
+                })
+            })
+        }
+    </script>
+</body>
+</html>
