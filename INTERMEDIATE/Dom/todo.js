@@ -15,8 +15,10 @@
 // console.log(mainHeading);
 
 
+document.write="ss";
 
-document.write("pssssssssssssssssssssssssssssssssspp");
+
+
 
 
 
