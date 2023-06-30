@@ -13,9 +13,10 @@
 // const mainHeading = document.querySelector("#main-heading");
 
 // console.log(mainHeading);
-const mainHeading = document.getElementById("main-heading");
 
-console.log(mainHeading.textContent);
+
+
+document.write("pssssssssssssssssssssssssssssssssspp");
 
 
 
