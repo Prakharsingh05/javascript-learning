@@ -19,6 +19,6 @@ console.log("script start");
 
 const hello=()=> console.log("hello world");
 
-setTimeout(hello,1000); // this setTime out method will execute upper funtion after 1 sec delay
+setTimeout(hello,1000); // this setTime out method will execute upper funtion after 1 sec delay also this settimeout functionalty is provided by browser
 
 console.log("script End");
