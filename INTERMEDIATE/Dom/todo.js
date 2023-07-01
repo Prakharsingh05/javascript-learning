@@ -141,8 +141,20 @@ sectionTodo.getBoundingClientRect(); // thi will return object which will be con
 // there are three ways to add events
 
 // 1st - add in html file tag
+// <button class = "btn btn-headline" onclick = "LearnMore()">Learn more</button>
 
+//2nd - add in js file by selecting element
 
+// const btn1 = document.querySelector("lrn");
+
+// btn.onclick =()=>{
+//     console.log('clicked');
+// }
+
+//3rd - using add event listner 
+const btn1 = document.querySelector("lrn");
+const clickme =()=>{console.log("clicked")}
+btn1.addEventListener("clcik", clickme );
 
 
 
