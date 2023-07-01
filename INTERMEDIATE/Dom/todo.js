@@ -152,11 +152,8 @@ sectionTodo.getBoundingClientRect(); // thi will return object which will be con
 // }
 
 //3rd - using add event listner 
-const btn1 = document.querySelector("lrn");
-const clickme =()=>{console.log("clicked")}
-btn1.addEventListener("clcik", clickme );
-
-
+const btn1 = document.querySelector(".lrn");
+btn1.addEventListener("click", ()=>{console.log("clicked")})
 
 
 
