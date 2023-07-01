@@ -33,4 +33,5 @@ const hello1=()=> console.log("hello world");
 
 const id = setTimeout(hello1,1000); // this setTime out method will execute upper funtion after 1 sec delay also this settimeout functionalty is provided by browser
 console.log("settiem id is" , id);
+clearTimeout(id);
 console.log("script End");
