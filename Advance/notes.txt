@@ -1,0 +1,6 @@
+synchrounous programming vs asynchronous programming.
+
+
+
+
+---------synchrounous programming--------------
