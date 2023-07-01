@@ -81,10 +81,66 @@ console.log(navItems[1]);// this is array like object not array {indexing}
 console.log(navItems[2]);
 console.log(navItems[3]);
 
+//add new html elements to page
+
+//innerHTML to add html elements
+
+const todoList = document.querySelector(".todo-list");
+
+// todoList.innerHTML += "<li>New Todo</li>";
+// todoList.innerHTML += "<li>New Todo</li>";
+// todoList.innerHTML += "<li>New Todo</li>";
+
+//document.createElement()
+
+// const newTodoItem =document.createElement("li");
+
+// // const newTodoTextItem =document.createTextNode("Javascript");
+// // newTodoItem.append(newTodoTextItem);
+// // todoList.append(newTodoItem);
 
 
 
+//clonning nodes
 
+// const ul = document.querySelector(".todo-List");
+// const li = document.createElement("li");
+// li.textContent="new todo";
+// const li2 = li.cloneNode(true);
+// ul.append(li);
+// ul.append(li);
+
+//static list vs live list
+
+const listItems = document.querySelectorAll(".todo-list li");
+
+const sixthLi = document.createElement("li");
+
+sixthLi.textContent ="item 6";
+
+const ul = document.querySelector(".todo-list");
+
+ul.appendChild(sixthLi);
+console.log(listItems); // nodelist will still be five beacuse this is static list
+
+//so queryselectorAll return static list
+// and getelemenetsbysomething returns live list
+
+
+//how to get the dimentions of the  elements
+
+//height width
+
+const  sectionTodo = document.querySelector(".section-todo");
+
+sectionTodo.getBoundingClientRect(); // thi will return object which will be conataining hight width
+
+
+// intro to events
+
+// there are three ways to add events
+
+// 1st - add in html file tag
 
 
 
