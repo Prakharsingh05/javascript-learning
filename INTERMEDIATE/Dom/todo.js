@@ -157,4 +157,19 @@ btn1.addEventListener("click", ()=>{console.log("clicked")})
 
 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// event bubbling / event propagation
+// event capturing
+// event delegation
