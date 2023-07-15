@@ -23,4 +23,5 @@ friedRicePromise.then(
     console.log("lets eat",datafrompromise);
 },
 
-
+//this will run if proise will reject
+(error)=>{console.log(error)})
