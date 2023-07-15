@@ -1,1 +1,1 @@
-const func 
+const func = new Promise((resolve,reject))
