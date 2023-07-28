@@ -25,3 +25,14 @@ friedRicePromise.then(
 
 //this will run if proise will reject
 (error)=>{console.log(error)})
+
+friedRicePromise.then(
+    //this will run if promise will resolve 
+(datafrompromise)=>{
+
+    console.log("lets eat",datafrompromise);
+},
+
+//this will run if proise will reject
+(error)=>{console.log(error)})
+
