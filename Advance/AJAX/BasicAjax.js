@@ -4,4 +4,8 @@
 
 // http request
 
-// is
+
+
+//what is ajax
+// it is a web developement techniques
+//
